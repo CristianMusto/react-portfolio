@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "title" : "HTML",
         "description" : "self-taught, improved in epicode and nss",
         "logo" : "./assets/images/logos/html-logo.jpg",
@@ -7,66 +8,75 @@
     },
 
     {
-        "title": "CSS",
-        "description": "self-taught, improved in epicode and nss",
-        "logo": "./assets/images/logos/css-logo.jpg",
-        "shadow": "#18A1DD"
+      "id": 1,
+      "title": "CSS",
+      "description": "self-taught, improved in epicode and nss",
+      "logo": "./assets/images/logos/css-logo.jpg",
+      "shadow": "#18A1DD"
     },
 
 
     {
-        "title": "SASS",
-        "description": "learnt in epicode and improved in nss",
-        "logo": "./assets/images/logos/sass-logo.jpg",
-        "shadow": "#CD6698"
+      "id": 2,
+      "title": "SASS",
+      "description": "learnt in epicode and improved in nss",
+      "logo": "./assets/images/logos/sass-logo.jpg",
+      "shadow": "#CD6698"
     },
 
     {
-        "title": "JAVASCRIPT",
-        "description": "self-taught, improved in epicode and nss",
-        "logo": "./assets/images/logos/javascript-logo.png",
-        "shadow": "#F1DD4E"
+      "id": 3,
+      "title": "JAVASCRIPT",
+      "description": "self-taught, improved in epicode and nss",
+      "logo": "./assets/images/logos/javascript-logo.png",
+      "shadow": "#F1DD4E"
     },
 
     {
-        "title": "JQUERY",
-        "description": "learnt in epicode and improved in nss",
-        "logo": "./assets/images/logos/jquery-logo.jpg",
-        "shadow": "#3558A8"
+      "id": 4,
+      "title": "JQUERY",
+      "description": "learnt in epicode and improved in nss",
+      "logo": "./assets/images/logos/jquery-logo.jpg",
+      "shadow": "#3558A8"
     },
 
     {
-        "title": "GIT",
-        "description": "learnt in epicode and improved in nss",
-        "logo": "./assets/images/logos/git.png",
-        "shadow": "#000000"
+      "id": 5,
+      "title": "GIT",
+      "description": "learnt in epicode and improved in nss",
+      "logo": "./assets/images/logos/git.png",
+      "shadow": "#000000"
     },
 
     {
-        "title": "SMARTY",
-        "description": "learnt in nss",
-        "logo": "./assets/images/logos/smarty.png",
-        "shadow": "#F0C040"
+      "id": 6,
+      "title": "SMARTY",
+      "description": "learnt in nss",
+      "logo": "./assets/images/logos/smarty.png",
+      "shadow": "#F0C040"
     },
 
     {
-        "title": "ANGULAR",
-        "description": "learnt in epicode",
-        "logo": "./assets/images/logos/angular-logo.jpg",
-        "shadow": "#2371D0"
+      "id": 7,
+      "title": "ANGULAR",
+      "description": "learnt in epicode",
+      "logo": "./assets/images/logos/angular-logo.jpg",
+      "shadow": "#2371D0"
     },
 
     {
-        "title": "VUE JS",
-        "description": "learnt in nss",
-        "logo": "./assets/images/logos/vue.png",
-        "shadow": "#30B982"
+      "id": 8,
+      "title": "VUE JS",
+      "description": "learnt in nss",
+      "logo": "./assets/images/logos/vue.png",
+      "shadow": "#30B982"
     },
 
     {
-        "title": "PHP",
-        "description": "learnt in nss",
-        "logo": "./assets/images/logos/php-logo-hd.jpg",
-        "shadow": "#5F82BA"
+      "id": 9,
+      "title": "PHP",
+      "description": "learnt in nss",
+      "logo": "./assets/images/logos/php-logo-hd.jpg",
+      "shadow": "#5F82BA"
     }
 ]

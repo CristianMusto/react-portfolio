@@ -1,0 +1,184 @@
+@import "../../../Assets/Utils/_font-faces";
+@import "../../../Assets/Utils/_mixins";
+@import "../../../Assets/Utils/_variables";
+
+
+
+.aboutContent {
+    width: 100%;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 150px;
+    margin-top: 100px;
+
+    @media (max-width: 768px) {
+        display: block;
+        padding: 0 50px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 0 25px;
+    }
+
+    .aboutText {
+        flex: 0 0 45%;
+        padding: 50px 0;
+
+        @media (max-width: 768px) {
+            flex: 0 0 100%;
+        }
+
+        h2 {
+            text-align: left;
+            margin: 10px 0;
+
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+
+        p {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .epicode {
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+
+            a {
+                background-color: var(--primary-color);
+                color: var(--contrast-color);
+                border-radius: 50px;
+                padding: 15px 50px;
+                @include fluid-type(16, 25, 300, 1920);
+            }
+
+            a:hover {
+                box-shadow: 0 0px 32px 0 var(--contrast-color);
+                border-color: var(--contrast-color);
+                background-color: var(--contrast-color);
+                color: var(--primary-color);
+            }
+        }
+
+    }
+
+    .aboutCard {
+        flex: 0 0 45%;
+        background: var(--glass);
+        border-radius: 16px;
+        box-shadow: 0 0px 32px 10px var(--primary-color);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        margin: 50px 0;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex: 0 0 100%;
+            box-shadow: 0 0px 20px 5px var(--primary-color);
+            padding: 0 25px;
+        }
+
+        .profilePic {
+            clip-path: circle(50%);
+            width: 50%;
+            margin: 25px auto;
+            position: relative;
+            top: 0;
+            height: 0;
+            padding-bottom: 50%;
+
+            img {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        p {
+            display: block;
+            margin: 15px auto;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 250ms linear;
+        }
+
+        .socialIcons {
+            padding: 0;
+            margin: 25px auto;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-right: 0.5rem;
+                position: relative;
+                font-size: 1.2rem;
+
+                a {
+                    display: inline-block;
+
+                    .icon {
+                        color: var(--contrast-color);
+                        position: absolute;
+                        top: 16px;
+                        left: 16px;
+                        transition: all 250ms ease-out;
+
+                        @media (max-width: 768px) {
+                            top: 7px;
+                            left: 8.5px;
+                        }
+                    }
+                }
+
+                a::before {
+                    transform: scale(1);
+                    content: "";
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    display: block;
+                    background: var(--primary-color);
+                    transition: all 250ms ease-out;
+
+                    @media (max-width: 768px) {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+
+                a:hover::before {
+                    transform: scale(0);
+                    transition: all 250ms ease-in;
+                }
+
+                a:hover .icon {
+                    transform: scale(2);
+                    color: var(--primary-color);
+                    background: var(--primary-color);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 250ms ease-in;
+                }
+            }
+        }
+    }
+}

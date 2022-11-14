@@ -1,6 +1,5 @@
 import Container from "../../Helpers/Container/Container";
 import style from "./Switch.module.scss"; 
-import { useState } from "react";
 
 const Switch = props => {
     return (

@@ -4,12 +4,13 @@ const LinkComponent = (props) => {
   return (
     <Link
       to={props.to}
-      activeClass="active"
+      activeClass={props.activeClass}
       spy={true}
       smooth={true}
       offset={props.offset}
       duration={1000}
       delay={250}
+      onClick={props.onClick}
     >
       <h3>{props.text}</h3>
     </Link>

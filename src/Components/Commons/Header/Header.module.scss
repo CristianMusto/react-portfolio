@@ -30,7 +30,7 @@ header {
                 a {
                     color: var(--contrast-color);
 
-                    &.active {
+                    &.active h3 {
                         border-bottom: 2px solid var(--contrast-color);
                     }
 
@@ -130,7 +130,7 @@ header {
         }
 
         .headerMenuMobile {
-            @include position(absolute, top);
+            @include position(fixed, top);
             top: 0;
             z-index: 9998;
             @include size(100%, 100px);
@@ -215,6 +215,12 @@ header {
                     a {
                         color: var(--contrast-color);
 
+                        &.active h3 {
+                            width: 50%;
+                            border-bottom: 2px solid var(--contrast-color);
+                            margin: 1em auto;
+                        }
+
                         .logoMobile {
                             position: relative;
                             left: 50%;
@@ -290,13 +296,15 @@ header {
                 }
             }
 
-            .listMenu {
-                position: absolute;
-                top: 0;
-                left: -1000px;
-                width: 100%;
-                height: $fullHeight;
-                transition: all 500ms linear;
+            &.notActive {
+                .listMenu {
+                    position: absolute;
+                    top: 0;
+                    left: -1000px;
+                    width: 100%;
+                    height: $fullHeight;
+                    transition: all 500ms linear;
+                }
             }
         }
     }
