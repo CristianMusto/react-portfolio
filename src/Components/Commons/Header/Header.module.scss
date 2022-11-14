@@ -104,6 +104,10 @@ header {
                         color: var(--primary-color);
                         cursor: pointer;
 
+                        &.active h3 {
+                            border-bottom: 2px solid var(--primary-color);
+                        }
+
                         .logo {
                             &:before {
                                 text-shadow: 2px 0 var(--primary-color);
