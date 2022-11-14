@@ -30,7 +30,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("load", checkSizes)
-  }, [])
+  })
 
   return (
     <header>
