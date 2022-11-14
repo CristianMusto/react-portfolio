@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.34e5e1ec.css",
+    "main.js": "/react-portfolio/static/js/main.61ce1f0a.js",
+    "static/media/CristianMustoEnglish-1.pdf": "/react-portfolio/static/media/CristianMustoEnglish-1.3695018624ca5a32418b.pdf",
+    "index.html": "/react-portfolio/index.html",
+    "main.34e5e1ec.css.map": "/react-portfolio/static/css/main.34e5e1ec.css.map",
+    "main.61ce1f0a.js.map": "/react-portfolio/static/js/main.61ce1f0a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34e5e1ec.css",
+    "static/js/main.61ce1f0a.js"
+  ]
+}
