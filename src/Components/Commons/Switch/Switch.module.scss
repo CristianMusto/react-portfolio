@@ -1,0 +1,125 @@
+@import "../../../Assets/Utils/_font-faces";
+@import "../../../Assets/Utils/_mixins";
+@import "../../../Assets/Utils/_variables";
+
+.switchContainer {
+    --bg: #9a9a9a;
+    --coal: #171717;
+    --white: var(--primary-color);
+    --focus: #000000;
+
+    .form {
+        display: flex;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: relative;
+    }
+
+    input {
+        position: fixed;
+        top: 0;
+        opacity: 0;
+
+        +label {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99999;
+            outline: 2px solid transparent;
+            transform: scale(1, 1);
+            transition:
+                outline .25s ease,
+                transform .15s ease;
+
+            @media (max-width: 768px) {
+                right: 10px;
+                bottom: 10px;
+                transform: scale(1.5);
+            }
+        }
+
+        &:active {
+            +label {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    label {
+        // Scales perfectly :D You can play around with "--w" to see for yourself :)
+        // Use viewport unit or "px" for "--w" value. Doesn't scale well with "%" at the moment :|
+
+        // Setting up some basic variables for the label
+
+        --w: 5vw;
+        --h: calc(var(--w) / 2);
+        --br: calc(var(--w) / 1);
+
+        @media (max-width: 768px) {
+            --w: 8vw;
+        }
+
+        position: relative;
+        background: white;
+        display: block;
+        width: var(--w);
+        height: var(--h);
+        border-radius: var(--br);
+        box-shadow: 0 0 10px black;
+        cursor: pointer;
+
+        text-indent: 200vw;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+        }
+
+        // Vars for pseudo elements
+        --size: calc(var(--w) / 3);
+        --offset: calc(var(--w) / 12);
+
+        &::before {
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            background: black;
+            left: 0px;
+            top: 50%;
+            transform: translate(var(--offset), -50%);
+            box-shadow:
+                calc(var(--w) - calc(var(--offset) * 2) - var(--size)) 0px 0px white;
+
+            z-index: 1;
+        }
+
+        &::after {
+            width: var(--size);
+            height: var(--size);
+            left: 0;
+            top: 50%;
+            background: black;
+            transform: translate(-100%, -50%) scale(1);
+            transform-origin: left;
+            border-radius: 50%;
+            transition:
+                transform .35s ease;
+        }
+
+    }
+
+    input:checked {
+        +label {
+            box-shadow:
+                0 0 10px white;
+
+            &::after {
+                transform: translate(-100%, -50%) scale(5);
+            }
+        }
+    }
+}

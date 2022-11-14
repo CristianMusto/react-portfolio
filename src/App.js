@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Footer from './Components/Commons/Footer/Footer';
+import Header from './Components/Commons/Header/Header';
+import Container from './Components/Helpers/Container/Container';
+import AOS from "aos";
+import Home from './Components/Home/Home';
+import { useState, useEffect } from "react";
+import Switch from './Components/Commons/Switch/Switch';
 
-function App() {
+const App = () => {
+  const [theme, setTheme] = useState("light");
+  const [isChecked, setIsChecked] = useState();
+  const switchTheme = () => {
+    if (theme === "light") {
+      localStorage.setItem("theme", "dark");
+      setTheme("dark");
+      setIsChecked(true);
+    } else if (theme === "dark") {
+      localStorage.setItem("theme", "light");
+      setTheme("light");
+      setIsChecked(false);
+    }
+  }
+
+  const startTheme = () => {
+    const startTheme = localStorage.getItem("theme");
+    if (startTheme === "light") {
+      setTheme("light");
+      setIsChecked(false);
+    } else if (startTheme === "dark") {
+      setTheme("dark")
+      setIsChecked(true);
+    }
+  }
+
+  useEffect(() => {
+    startTheme();
+  }, [])
+
+  AOS.init();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App" theme={theme}>
+      <Header />
+      <Home theme={theme}/>
+      <Footer />
+      <Switch onSwitchTheme={switchTheme} isChecked={isChecked}/>
+    </Container>
   );
 }
 

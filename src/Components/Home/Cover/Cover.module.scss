@@ -1,0 +1,91 @@
+@import "../../../Assets/Utils/_font-faces";
+@import "../../../Assets/Utils/_mixins";
+@import "../../../Assets/Utils/_variables";
+
+.cover {
+    position: relative;
+    height: $fullHeight;
+    width: 100%;
+
+    h1 {
+        @include fluid-type(40, 100, 300, 1920);
+        color: var(--primary-color);
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -100%);
+        z-index: 9888;
+    }
+
+    p {
+        @include fluid-type(15, 30, 300, 1920);
+        color: var(--primary-color);
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -100%);
+        z-index: 9888;
+    }
+
+    @keyframes noise-anim {
+        $steps: 20;
+
+        @for $i from 0 through $steps {
+            #{percentage($i*calc(1/$steps))} {
+                clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+            }
+        }
+    }
+
+    h1:after {
+        content: attr(data-text);
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: 2px;
+        text-shadow: -2px 0 var(--primary-color);
+        top: 0;
+        color: var(--primary-color);
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim 2s infinite linear alternate-reverse;
+    }
+
+    @keyframes noise-anim-2 {
+        $steps: 20;
+
+        @for $i from 0 through $steps {
+            #{percentage($i*calc(1/$steps))} {
+                clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+            }
+        }
+    }
+
+    h1:before {
+        content: attr(data-text);
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: -2px;
+        text-shadow: 2px 0 var(--primary-color);
+        top: 0;
+        color: var(--primary-color);
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim-2 3s infinite linear alternate-reverse;
+    }
+
+    .backgroundCover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: $fullHeight;
+        z-index: 0;
+    }
+}
