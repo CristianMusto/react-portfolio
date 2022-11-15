@@ -3,7 +3,7 @@
     "id": 0,
     "title": "HTML",
     "description": "self-taught, improved in epicode and nss",
-    "logo": "../../src/Assets/images/logos/html-logo.jpg",
+    "logo": "../images/logos/html-logo.jpg",
     "shadow": "#F16327"
   },
 
@@ -11,7 +11,7 @@
     "id": 1,
     "title": "CSS",
     "description": "self-taught, improved in epicode and nss",
-    "logo": "../../src/Assets/images/logos/css-logo.jpg",
+    "logo": "../images/logos/css-logo.jpg",
     "shadow": "#18A1DD"
   },
 
@@ -19,7 +19,7 @@
     "id": 2,
     "title": "SASS",
     "description": "learnt in epicode and improved in nss",
-    "logo": "../../src/Assets/images/logos/sass-logo.jpg",
+    "logo": "../images/logos/sass-logo.jpg",
     "shadow": "#CD6698"
   },
 
@@ -27,7 +27,7 @@
     "id": 3,
     "title": "JAVASCRIPT",
     "description": "self-taught, improved in epicode and nss",
-    "logo": "../../src/Assets/images/logos/javascript-logo.png",
+    "logo": "../images/logos/javascript-logo.png",
     "shadow": "#F1DD4E"
   },
 
@@ -35,7 +35,7 @@
     "id": 4,
     "title": "JQUERY",
     "description": "learnt in epicode and improved in nss",
-    "logo": "../../src/Assets/images/logos/jquery-logo.jpg",
+    "logo": "../images/logos/jquery-logo.jpg",
     "shadow": "#3558A8"
   },
 
@@ -43,7 +43,7 @@
     "id": 5,
     "title": "GIT",
     "description": "learnt in epicode and improved in nss",
-    "logo": "../../src/Assets/images/logos/git.png",
+    "logo": "../images/logos/git.png",
     "shadow": "#000000"
   },
 
@@ -51,7 +51,7 @@
     "id": 6,
     "title": "SMARTY",
     "description": "learnt in nss",
-    "logo": "../../src/Assets/images/logos/smarty.png",
+    "logo": "../images/logos/smarty.png",
     "shadow": "#F0C040"
   },
 
@@ -59,7 +59,7 @@
     "id": 7,
     "title": "ANGULAR",
     "description": "learnt in epicode",
-    "logo": "../../src/Assets/images/logos/angular-logo.jpg",
+    "logo": "../images/logos/angular-logo.jpg",
     "shadow": "#2371D0"
   },
 
@@ -67,7 +67,7 @@
     "id": 8,
     "title": "REACT JS",
     "description": "self-taught, udemy course",
-    "logo": "../../src/Assets/images/logos/angular-logo.jpg",
+    "logo": "../images/logos/angular-logo.jpg",
     "shadow": "#2371D0"
   },
 
@@ -75,7 +75,7 @@
     "id": 9,
     "title": "VUE JS",
     "description": "learnt in nss",
-    "logo": "../../src/Assets/images/logos/vue.png",
+    "logo": "../images/logos/vue.png",
     "shadow": "#30B982"
   },
 
@@ -83,7 +83,7 @@
     "id": 10,
     "title": "PHP",
     "description": "learnt in nss",
-    "logo": "../../src/Assets/images/logos/php-logo-hd.jpg",
+    "logo": "../images/logos/php-logo-hd.jpg",
     "shadow": "#5F82BA"
   }
 ]
