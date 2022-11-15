@@ -17,7 +17,7 @@ const Knowledge = (props) => {
       });
       const data = await (
         await fetch(
-          "https://cristianmusto.github.io/react-portfolio/Assets/json/cardsKE.json",
+          "https://cristianmusto.github.io/react-portfolio/json/cardsKE.json",
           {
             headers: headers,
           }
