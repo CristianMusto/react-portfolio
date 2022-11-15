@@ -6,27 +6,20 @@ import "swiper/css";
 import { Autoplay, EffectCoverflow, Lazy } from "swiper";
 import { useState, useEffect } from "react";
 
-const Knowledge = (props) => {
-  const [cardsContent, setCardsContent] = useState([]);
+const Knowledge = () => {
+  const [knowledgeContent, setKnowledgeContent] = useState([]);
 
   useEffect(() => {
-    const dataFetch = async () => {
-      const headers = new Headers({
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      });
+    const knowledgeFetch = async () => {
       const data = await (
         await fetch(
-          "https://cristianmusto.github.io/react-portfolio/json/cardsKE.json",
-          {
-            headers: headers,
-          }
+          "https://cristianmusto.github.io/react-portfolio/json/cardsKE.json"
         )
       ).json();
-      setCardsContent(data);
+      setKnowledgeContent(data);
     };
 
-    dataFetch();
+    knowledgeFetch();
   }, []);
 
   return (
@@ -64,10 +57,10 @@ const Knowledge = (props) => {
           centeredSlides={true}
           loop={false}
         >
-          {cardsContent.length > 0 ? (
-            cardsContent.map((el) => (
+          {knowledgeContent.length > 0 ? (
+            knowledgeContent.map((el) => (
               <SwiperSlide
-                key={el.title}
+                key={el.id}
                 className={`${style.knowledgeCard} ${style.swiperSlide}`}
                 style={{ boxShadow: `0 0 20px 10px ${el.shadow}` }}
               >
