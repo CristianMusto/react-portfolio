@@ -50,7 +50,7 @@ const ParticlesComponent = (props) => {
             options: {
               particles: {
                 number: {
-                  value: 25,
+                  value: 5,
                 },
               },
             },

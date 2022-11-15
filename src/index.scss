@@ -1,3 +1,13 @@
 * {
   box-sizing: border-box;
+
+  .swiper-slide-active {
+    filter: blur(0px) !important;
+  }
+
+
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
+    background-image: none;
+  }
 }

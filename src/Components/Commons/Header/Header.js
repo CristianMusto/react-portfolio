@@ -4,33 +4,45 @@ import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
 
 const Header = () => {
+  const getWindowSize = () => {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  };
 
   const [isMobile, setIsMobile] = useState();
   const [isOpen, setIsOpen] = useState();
 
-  const checkSizes = () => {
-    if (window.outerWidth < 768) {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  const menuOpen = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(true);
+    }
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+    
+    if (windowSize.innerWidth <= 768) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
     }
-  };
 
-  const menuOpen = () => {
-    if (isOpen) {
-      setIsOpen(false)
-    } else {
-      setIsOpen(true)
-    }
-  }
-
-  const closeMenu = () => {
-    setIsOpen(false)
-  }
-
-  useEffect(() => {
-    window.addEventListener("load", checkSizes)
-  })
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [windowSize]);
 
   return (
     <header>
@@ -43,7 +55,7 @@ const Header = () => {
             <li className={style.menuItem}>
               <LinkComponent
                 to="About"
-                offset={-250}
+                offset={-100}
                 text="About"
                 activeClass={style.active}
               />
@@ -51,7 +63,7 @@ const Header = () => {
             <li className={style.menuItem} style={{ marginleft: "-5%" }}>
               <LinkComponent
                 to="Knowledge"
-                offset={-250}
+                offset={-100}
                 text="Knowledge"
                 activeClass={style.active}
               />
@@ -73,7 +85,7 @@ const Header = () => {
             <li className={style.menuItem}>
               <LinkComponent
                 to="Projects"
-                offset={-250}
+                offset={-100}
                 text="Projects"
                 activeClass={style.active}
               />
@@ -81,7 +93,7 @@ const Header = () => {
             <li className={style.menuItem}>
               <LinkComponent
                 to="Socials"
-                offset={-250}
+                offset={-100}
                 text="Socials"
                 activeClass={style.active}
               />
