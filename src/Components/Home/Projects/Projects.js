@@ -74,6 +74,7 @@ const Projects = () => {
                     alt={`logo ${el.title}`}
                     title={el.title}
                     description={el.description}
+                    credits={el.credits}
                   />
                 </SwiperSlide>
               ))
