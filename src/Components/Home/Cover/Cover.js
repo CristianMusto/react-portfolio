@@ -4,7 +4,7 @@ import style from "./Cover.module.scss";
 
 const Cover = props => {
     return (
-        <Element name="Cover" className={style.cover} data-aos="fade-down" data-aos-duration="500">
+        <Element id="Cover" className={style.cover} data-aos="fade-down" data-aos-duration="500">
             <h1 data-text="Cristian Musto">Cristian Musto</h1>
             <p>Front-End developer</p>
             <ParticlesComponent className={style.backgroundCover} theme={props.theme}/>

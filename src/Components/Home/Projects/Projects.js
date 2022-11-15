@@ -25,9 +25,8 @@ const Projects = () => {
     }, []);
     return (
       <Element
-        name="Projects"
+        id="Projects"
         className={style.projectsContent}
-        id="#projects"
         data-aos="fade-up"
         data-aos-duration="500"
         data-aos-offset="250"

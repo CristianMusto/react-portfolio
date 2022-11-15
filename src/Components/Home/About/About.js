@@ -12,7 +12,7 @@ import { Element } from "react-scroll";
 
 const About = (props) => {
   return (
-    <Element name="About" className={style.aboutContent}>
+    <Element id="About" className={style.aboutContent}>
       <div
         className={style.aboutText}
         data-aos="fade-right"

@@ -3,7 +3,7 @@ import LinkComponent from "../../UI/Links/Links";
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
 
-const Header = () => {
+const Header = (props) => {
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
@@ -46,18 +46,20 @@ const Header = () => {
 
   return (
     <header>
-      <div className={style.headerContainer}>
+      <div className={`${style.headerContainer} headerContainer`}>
         <div
-          className={style.headerMenu}
+          className={`${style.headerMenu} headerMenu`}
           style={isMobile ? { display: "none" } : { display: "block" }}
         >
-          <ul className={style.listMenu}>
-            <li className={style.menuItem}>
+          <ul className={`${style.listMenu} listMenu`}>
+            <li className={`${style.menuItem} menuItem`}>
               <LinkComponent
                 to="About"
                 offset={-100}
                 text="About"
                 activeClass={style.active}
+                onSetActive={props.onActive}
+                onSetInactive={props.onInactive}
               />
             </li>
             <li className={style.menuItem} style={{ marginleft: "-5%" }}>
@@ -66,6 +68,7 @@ const Header = () => {
                 offset={-100}
                 text="Knowledge"
                 activeClass={style.active}
+                onSetActive={props.onActive}
               />
             </li>
             <li className={`${style.menuItem} ${style.logo}`}>
@@ -74,8 +77,6 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={1000}
-                delay={250}
               >
                 <h3 data-text="CM" className={style.logo}>
                   CM
@@ -88,6 +89,7 @@ const Header = () => {
                 offset={-100}
                 text="Projects"
                 activeClass={style.active}
+                onSetActive={props.onActive}
               />
             </li>
             <li className={style.menuItem}>
@@ -96,6 +98,7 @@ const Header = () => {
                 offset={-100}
                 text="Socials"
                 activeClass={style.active}
+                onSetActive={props.onActive}
               />
             </li>
           </ul>
@@ -109,7 +112,7 @@ const Header = () => {
           <div
             className={`${style.hambMenu} ${
               isOpen ? style.active : style.notActive
-            }`}
+            } hambMenu`}
             onClick={menuOpen}
           >
             <span></span>
@@ -141,8 +144,6 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={1000}
-                delay={250}
                 onClick={closeMenu}
               >
                 <h3 data-text="CM" className={style.logoMobile}>

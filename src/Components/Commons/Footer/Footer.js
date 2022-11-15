@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 const Footer = () => {
     return (
       <footer>
-        <Element name="Socials" className={style.container}>
+        <Element id="Socials" className={style.container}>
           <ul className={style.socialIcons}>
             <li>
               <a href="https://www.linkedin.com/in/cristian-musto-7b3b181b8/">

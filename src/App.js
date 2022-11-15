@@ -10,6 +10,8 @@ import Switch from './Components/Commons/Switch/Switch';
 const App = () => {
   const [theme, setTheme] = useState("light");
   const [isChecked, setIsChecked] = useState();
+  const [isActive, setIsActive] = useState();
+
   const switchTheme = () => {
     if (theme === "light") {
       localStorage.setItem("theme", "dark");
@@ -33,6 +35,14 @@ const App = () => {
     }
   }
 
+  const handleSetActive = () => {
+    setIsActive(true);
+  }
+
+  const handleSetInactive = () => {
+    setIsActive(false);
+  };
+
   useEffect(() => {
     startTheme();
   }, [])
@@ -40,11 +50,11 @@ const App = () => {
   AOS.init();
 
   return (
-    <Container className="App" theme={theme}>
-      <Header />
-      <Home theme={theme}/>
+    <Container className={`App ${isActive ? "reachedMain" : ""}`} theme={theme}>
+      <Header onActive={handleSetActive} onInactive={handleSetInactive} />
+      <Home theme={theme} />
       <Footer />
-      <Switch onSwitchTheme={switchTheme} isChecked={isChecked}/>
+      <Switch onSwitchTheme={switchTheme} isChecked={isChecked} />
     </Container>
   );
 }

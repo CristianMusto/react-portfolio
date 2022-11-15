@@ -134,3 +134,34 @@
     }
   }
 }
+
+.reachedMain {
+  header {
+    .headerContainer {
+      .headerMenu {
+        .listMenu {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          border-radius: 0;
+          background-color: var(--primary-color);
+          transition: all 500ms linear;
+
+          a {
+            color: var(--contrast-color);
+            transition: all 500ms linear;
+          }
+        }
+      }
+    }
+
+    .hambMenu {
+      transform: scale(0.6);
+      left: -2%;
+      top: -1% !important;
+      margin-left: 0 !important;
+      margin-top: 0 !important;
+      transition: all 500ms linear;
+    }
+  }
+}

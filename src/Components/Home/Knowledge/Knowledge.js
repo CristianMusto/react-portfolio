@@ -24,9 +24,8 @@ const Knowledge = () => {
 
   return (
     <Element
-      name="Knowledge"
+      id="Knowledge"
       className={style.knowledgeContent}
-      id="#knowledge"
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-offset="250"

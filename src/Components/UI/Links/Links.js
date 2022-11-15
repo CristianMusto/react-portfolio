@@ -11,6 +11,8 @@ const LinkComponent = (props) => {
       duration={1000}
       delay={250}
       onClick={props.onClick}
+      onSetActive={props.onSetActive}
+      onSetInactive={props.onSetInactive}
     >
       <h3>{props.text}</h3>
     </Link>
