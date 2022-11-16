@@ -6,7 +6,7 @@ const CardProjects = (props) => {
     <div>
       <div className={props.classNamePic}>
         <a href={props.href}>
-          <img src={props.src} className="swiper-lazy" alt={props.alt} />
+          <img src={props.src} alt={props.alt} />
         </a>
       </div>
       <h2>{props.title}</h2>
@@ -14,7 +14,10 @@ const CardProjects = (props) => {
       <ul className={props.classNameSocials}>
         <li>
           <a href={props.hrefIcon} target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faArrowRight} className={props.classNameIcon}/>
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              className={props.classNameIcon}
+            />
           </a>
         </li>
       </ul>

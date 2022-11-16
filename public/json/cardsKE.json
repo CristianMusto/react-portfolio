@@ -85,5 +85,12 @@
     "description": "learnt in nss",
     "logo": "images/logos/php-logo-hd.jpg",
     "shadow": "#5F82BA"
+  },
+  {
+    "id": 11,
+    "title": "Coming Soon",
+    "description": "",
+    "logo": "images/logos/comingSoon.jpeg",
+    "shadow": "#000000"
   }
 ]

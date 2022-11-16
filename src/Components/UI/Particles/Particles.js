@@ -34,7 +34,7 @@ const ParticlesComponent = (props) => {
           },
           move: {
             enable: true,
-            speed: { min: 1, max: 2.5 },
+            speed: 1,
           },
           size: {
             value: 2,
@@ -120,7 +120,7 @@ const ParticlesComponent = (props) => {
           },
           move: {
             enable: true,
-            speed: { min: 1, max: 2.5 },
+            speed: 1,
           },
           size: {
             value: 2,

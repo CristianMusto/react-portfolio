@@ -3,7 +3,10 @@ import CardKnowledge from "../../Helpers/Cards/CardKnowledge";
 import { Element } from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, EffectCoverflow, Lazy } from "swiper";
+import "swiper/css/lazy";
+import "swiper/css/effect-coverflow";
+import "swiper/css/autoplay";
+import { Autoplay, EffectCoverflow } from "swiper";
 import { useState, useEffect } from "react";
 
 const Knowledge = () => {
@@ -37,7 +40,7 @@ const Knowledge = () => {
         <Swiper
           className={style.swiperContainer}
           slidesPerView="auto"
-          modules={[EffectCoverflow, Autoplay, Lazy]}
+          modules={[EffectCoverflow, Autoplay]}
           effect="coverflow"
           coverflowEffect={{
             rotate: 0,
@@ -50,6 +53,7 @@ const Knowledge = () => {
             delay: 5000,
             disableOnInteraction: true,
           }}
+          loadPrevNext={true}
           preloadImages={true}
           updateOnImagesReady={true}
           grabCursor={true}
@@ -73,7 +77,7 @@ const Knowledge = () => {
               </SwiperSlide>
             ))
           ) : (
-            <h3>Something went wrong</h3>
+            <h3>Coming Soon...</h3>
           )}
         </Swiper>
       </div>

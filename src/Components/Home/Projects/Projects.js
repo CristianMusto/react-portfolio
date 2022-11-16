@@ -3,7 +3,10 @@ import CardProjects from "../../Helpers/Cards/CardProjects";
 import { Element } from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, EffectCoverflow, Lazy } from "swiper";
+import "swiper/css/lazy";
+import "swiper/css/effect-coverflow";
+import "swiper/css/autoplay";
+import { Autoplay, EffectCoverflow } from "swiper";
 import { useState, useEffect } from "react";
 
 const Projects = () => {
@@ -38,7 +41,7 @@ const Projects = () => {
           <Swiper
             className={style.swiperContainer}
             slidesPerView="auto"
-            modules={[EffectCoverflow, Autoplay, Lazy]}
+            modules={[EffectCoverflow, Autoplay]}
             effect="coverflow"
             coverflowEffect={{
               rotate: 0,
@@ -51,6 +54,7 @@ const Projects = () => {
               delay: 5000,
               disableOnInteraction: true,
             }}
+            loadPrevNext={true}
             preloadImages={true}
             updateOnImagesReady={true}
             grabCursor={true}
@@ -71,7 +75,7 @@ const Projects = () => {
                     src={el.logo}
                     href={el.link}
                     hrefIcon={el.link}
-                    alt={`logo ${el.title}`}
+                    alt={`immage ${el.title}`}
                     title={el.title}
                     description={el.description}
                     credits={el.credits}
@@ -79,7 +83,7 @@ const Projects = () => {
                 </SwiperSlide>
               ))
             ) : (
-              <h3>Something went wrong</h3>
+              <h3>Coming Soon...</h3>
             )}
           </Swiper>
         </div>
