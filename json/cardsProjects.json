@@ -79,5 +79,14 @@
       "link": "https://www.nssgclub.com/it/sirene",
       "shadow": "#D67994",
       "credits": "credits: Nss g-club, Brownie"
+    },
+    {
+      "id": 9,
+      "title": "Coming Soon",
+      "description": "",
+      "logo": "images/projects/comingSoon.jpeg",
+      "link": "",
+      "shadow": "#000000",
+      "credits": ""
     }
-]
+  ]
