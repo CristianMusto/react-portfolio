@@ -2,7 +2,7 @@ const CardKnowledge = props => {
     return (
         <div>
             <div className={props.classNamePic}>
-                <img src={props.src} alt={props.alt}/>
+                {props.src != "" && <img src={props.src} alt={props.alt}/>}
             </div>
             <h2>{props.title}</h2>
             <p>{props.description}</p>
