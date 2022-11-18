@@ -59,6 +59,7 @@ const Projects = () => {
             grabCursor={true}
             centeredSlides={true}
             loop={false}
+            autoHeight={true}
           >
             {projectsContent.length > 0 ? (
               projectsContent.map((el) => (
