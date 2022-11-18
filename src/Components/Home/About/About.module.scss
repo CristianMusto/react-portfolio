@@ -15,7 +15,11 @@
 
     @media (max-width: 768px) {
         display: block;
-        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        padding: 0 50px;
+    }
+
+    @media (orientation: landscape) {
+        padding: 0 20px;
     }
 
     @media (max-width: 1024px) {
