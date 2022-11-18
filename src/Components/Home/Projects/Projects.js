@@ -60,6 +60,7 @@ const Projects = () => {
             grabCursor={true}
             centeredSlides={true}
             loop={false}
+            autoHeight={true}
           >
             {projectsContent.length > 0 ? (
               projectsContent.map((el) => (
@@ -67,6 +68,7 @@ const Projects = () => {
                   key={el.id}
                   className={`${style.projectsCard} ${style.swiperSlide}`}
                   style={{ boxShadow: `0 0 20px 10px ${el.shadow}` }}
+                  
                 >
                   <CardProjects
                     classNamePic={style.profilePic}

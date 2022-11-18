@@ -59,6 +59,7 @@ const Knowledge = () => {
           grabCursor={true}
           centeredSlides={true}
           loop={false}
+          autoHeight={true}
         >
           {knowledgeContent.length > 0 ? (
             knowledgeContent.map((el) => (
