@@ -54,13 +54,11 @@ const Projects = () => {
               delay: 5000,
               disableOnInteraction: true,
             }}
-            loadPrevNext={true}
             preloadImages={true}
             updateOnImagesReady={true}
             grabCursor={true}
             centeredSlides={true}
             loop={false}
-            autoHeight={true}
           >
             {projectsContent.length > 0 ? (
               projectsContent.map((el) => (

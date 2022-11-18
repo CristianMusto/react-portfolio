@@ -5,13 +5,13 @@ const CardProjects = (props) => {
   return (
     <div>
       <div className={props.classNamePic}>
-        <a href={props.href != "" && `${props.href}`}>
-          {props.src != "" && <img src={props.src} alt={props.alt} />}
+        <a href={props.href !== "" ? `${props.href}` : "undefined"}>
+          {props.src !== "" && <img src={props.src} alt={props.alt} />}
         </a>
       </div>
       <h2>{props.title}</h2>
       <p>{props.description}</p>
-      {props.hrefIcon != "" && <ul className={props.classNameSocials}>
+      {props.hrefIcon !== "" && <ul className={props.classNameSocials}>
         <li>
           <a href={props.hrefIcon} target="_blank" rel="noreferrer">
             <FontAwesomeIcon

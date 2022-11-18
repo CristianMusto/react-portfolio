@@ -53,13 +53,11 @@ const Knowledge = () => {
             delay: 5000,
             disableOnInteraction: true,
           }}
-          loadPrevNext={true}
           preloadImages={true}
           updateOnImagesReady={true}
           grabCursor={true}
           centeredSlides={true}
           loop={false}
-          autoHeight={true}
         >
           {knowledgeContent.length > 0 ? (
             knowledgeContent.map((el) => (
