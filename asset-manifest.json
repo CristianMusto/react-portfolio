@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.f2031dba.css",
+    "main.css": "/react-portfolio/static/css/main.a19b3ee1.css",
     "main.js": "/react-portfolio/static/js/main.7d08d3a2.js",
     "static/media/attestatoEpicode.pdf": "/react-portfolio/static/media/attestatoEpicode.a9846ee4a8eed98a9f49.pdf",
     "static/media/CristianMustoEnglish-1.pdf": "/react-portfolio/static/media/CristianMustoEnglish-1.3695018624ca5a32418b.pdf",
     "static/media/profile.jpg": "/react-portfolio/static/media/profile.bb6fc63c6a338206bc9c.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.f2031dba.css.map": "/react-portfolio/static/css/main.f2031dba.css.map",
+    "main.a19b3ee1.css.map": "/react-portfolio/static/css/main.a19b3ee1.css.map",
     "main.7d08d3a2.js.map": "/react-portfolio/static/js/main.7d08d3a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2031dba.css",
+    "static/css/main.a19b3ee1.css",
     "static/js/main.7d08d3a2.js"
   ]
 }
