@@ -12,7 +12,7 @@ $breakpoints: (
 );
 /////////////////////////////////////////////////
 //<-----SIZES----->
-$fullHeight: calc((var(--vh, 1vh)  * 100));
+$fullHeight: calc((var(--vh, 1vh)  * 100)); // Use in js or a component (var vh=window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', vh+'px'));
 $font-base-min: 16px;
 $font-base-max: 100px;
 $breakmin: 400px;

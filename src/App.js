@@ -43,7 +43,13 @@ const App = () => {
     setIsActive(false);
   };
 
+  const handleVH = () => {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", vh + "px");
+  }
+
   useEffect(() => {
+    window.addEventListener("resize", handleVH)
     startTheme();
   }, [])
 
