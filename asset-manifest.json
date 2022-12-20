@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.3889a75f.css",
-    "main.js": "/react-portfolio/static/js/main.7d08d3a2.js",
+    "main.css": "/react-portfolio/static/css/main.e07bba2d.css",
+    "main.js": "/react-portfolio/static/js/main.bfb4ac92.js",
     "static/media/attestatoEpicode.pdf": "/react-portfolio/static/media/attestatoEpicode.a9846ee4a8eed98a9f49.pdf",
     "static/media/CristianMustoEnglish-1.pdf": "/react-portfolio/static/media/CristianMustoEnglish-1.3695018624ca5a32418b.pdf",
     "static/media/profile.jpg": "/react-portfolio/static/media/profile.bb6fc63c6a338206bc9c.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.3889a75f.css.map": "/react-portfolio/static/css/main.3889a75f.css.map",
-    "main.7d08d3a2.js.map": "/react-portfolio/static/js/main.7d08d3a2.js.map"
+    "main.e07bba2d.css.map": "/react-portfolio/static/css/main.e07bba2d.css.map",
+    "main.bfb4ac92.js.map": "/react-portfolio/static/js/main.bfb4ac92.js.map"
   },
   "entrypoints": [
-    "static/css/main.3889a75f.css",
-    "static/js/main.7d08d3a2.js"
+    "static/css/main.e07bba2d.css",
+    "static/js/main.bfb4ac92.js"
   ]
 }
