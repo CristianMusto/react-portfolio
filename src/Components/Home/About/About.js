@@ -67,7 +67,7 @@ const About = (props) => {
             </a>
           </li>
           <li>
-            <a href="https://github.com/NightSky11">
+            <a href="https://github.com/CristianMusto">
               <FontAwesomeIcon icon={faGithub} className={style.icon} />
             </a>
           </li>
