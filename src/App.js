@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import Switch from './Components/Commons/Switch/Switch';
 
 const App = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const [isChecked, setIsChecked] = useState();
   const [isActive, setIsActive] = useState();
 
