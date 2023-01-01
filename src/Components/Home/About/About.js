@@ -80,7 +80,7 @@ const About = (props) => {
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/_cristian_musto_/">
+            <a href="https://www.instagram.com/__therealnightsky__/">
               <FontAwesomeIcon icon={faInstagram} className={style.icon} />
             </a>
           </li>
