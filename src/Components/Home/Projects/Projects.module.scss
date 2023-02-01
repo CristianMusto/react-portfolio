@@ -88,10 +88,7 @@
             display: block;
             margin: 15px auto;
             width: 75%;
-
-            &:nth-last-of-type(1) {
-                text-align: center;
-            }
+            text-align: center;
 
             @media (max-width: 768px) {
                 width: 100%;
