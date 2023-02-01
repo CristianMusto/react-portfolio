@@ -1,6 +1,4 @@
 import style from "./About.module.scss";
-import epicode from "../../../Assets/images/epicode/attestatoEpicode.pdf";
-import udemy from "../../../Assets/images/udemy/reactCourse.pdf";
 import profilePic from "../../../Assets/images/profile.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -38,20 +36,6 @@ const About = (props) => {
           professional career and I do not fear any difficulties, this is my
           strength.
         </p>
-        <br />
-        <br />
-        <div className={style.coursesContainer}>
-          <div className={style.epicode}>
-            <a href={epicode} target="_blank" rel="noreferrer">
-              Epicode certificate
-            </a>
-          </div>
-          <div className={style.udemy}>
-            <a href={udemy} target="_blank" rel="noreferrer">
-              React certificate
-            </a>
-          </div>
-        </div>
       </div>
       <div
         className={style.aboutCard}
