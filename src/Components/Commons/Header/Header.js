@@ -64,9 +64,9 @@ const Header = (props) => {
             </li>
             <li className={style.menuItem} style={{ marginleft: "-5%" }}>
               <LinkComponent
-                to="Knowledge"
+                to="Certificates"
                 offset={-100}
-                text="Knowledge"
+                text="Certificates"
                 activeClass={style.active}
                 onSetActive={props.onActive}
               />
@@ -85,18 +85,18 @@ const Header = (props) => {
             </li>
             <li className={style.menuItem}>
               <LinkComponent
-                to="Projects"
+                to="Knowledge"
                 offset={-100}
-                text="Projects"
+                text="Knowledge"
                 activeClass={style.active}
                 onSetActive={props.onActive}
               />
             </li>
             <li className={style.menuItem}>
               <LinkComponent
-                to="Socials"
+                to="Projects"
                 offset={-100}
-                text="Socials"
+                text="Projects"
                 activeClass={style.active}
                 onSetActive={props.onActive}
               />
