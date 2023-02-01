@@ -4,7 +4,7 @@
         "title": "Epicode School",
         "description": "Front-End Certificate",
         "logo": "images/epicode/attestatoEpicode.jpg",
-        "link": "../images/epicode/attestatoEpicode.pdf",
+        "link": "https://cristianmusto.github.io/react-portfolio/images/epicode/attestatoEpicode.pdf",
         "shadow": "#E63055"
     },
 
@@ -13,7 +13,7 @@
         "title": "Udemy",
         "description": "ReactJS Certificate",
         "logo": "images/udemy/reactCourse.jpg",
-        "link": "../images/udemy/reactCourse.pdf",
+        "link": "https://cristianmusto.github.io/react-portfolio/images/udemy/reactCourse.pdf",
         "shadow": "#A335EF"
     },
 
@@ -22,7 +22,7 @@
         "title": "EF SET",
         "description": "English Certificate",
         "logo": "images/efSet/englishCertificate.jpg",
-        "link": "../images/efSet/englishCert.pdf",
+        "link": "https://cristianmusto.github.io/react-portfolio/images/efSet/englishCert.pdf",
         "shadow": "#450AE1"
     }
 
