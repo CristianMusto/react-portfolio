@@ -3,8 +3,8 @@
         "id": 0,
         "title": "Epicode School",
         "description": "Front-End Certificate",
-        "logo": "images/epicode/attestatoEpicode.pdf",
-        "link": "../images/epicode/attestatoEpicode.pdf",
+        "logo": "images/epicode/attestatoEpicode.jpg",
+        "link": "https://cristianmusto.github.io/react-portfolio/images/epicode/attestatoEpicode.pdf",
         "shadow": "#E63055"
     },
 
@@ -12,8 +12,8 @@
         "id": 1,
         "title": "Udemy",
         "description": "ReactJS Certificate",
-        "logo": "images/udemy/reactCourse.pdf",
-        "link": "../images/udemy/reactCourse.pdf",
+        "logo": "images/udemy/reactCourse.jpg",
+        "link": "https://cristianmusto.github.io/react-portfolio/images/udemy/reactCourse.pdf",
         "shadow": "#A335EF"
     },
 
@@ -21,9 +21,19 @@
         "id": 2,
         "title": "EF SET",
         "description": "English Certificate",
-        "logo": "images/efSet/englishCert.pdf",
-        "link": "../images/efSet/englishCert.pdf",
+        "logo": "images/efSet/englishCertificate.jpg",
+        "link": "https://cristianmusto.github.io/react-portfolio/images/efSet/englishCert.pdf",
         "shadow": "#450AE1"
+    },
+
+    {
+        "id": 10,
+        "title": "Coming Soon",
+        "description": "I'm working hard to learn new technologies, libraries and framework to be a better developer!",
+        "logo": "images/projects/comingSoon.jpeg",
+        "link": "",
+        "shadow": "#000000",
+        "credits": ""
     }
 
 ]
