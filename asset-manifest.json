@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.357e4d6d.css",
+    "main.css": "/react-portfolio/static/css/main.240a9e4a.css",
     "main.js": "/react-portfolio/static/js/main.ea9ec666.js",
     "static/media/CristianMustoEnglish-1.pdf": "/react-portfolio/static/media/CristianMustoEnglish-1.3695018624ca5a32418b.pdf",
     "static/media/profile.jpg": "/react-portfolio/static/media/profile.bb6fc63c6a338206bc9c.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.357e4d6d.css.map": "/react-portfolio/static/css/main.357e4d6d.css.map",
+    "main.240a9e4a.css.map": "/react-portfolio/static/css/main.240a9e4a.css.map",
     "main.ea9ec666.js.map": "/react-portfolio/static/js/main.ea9ec666.js.map"
   },
   "entrypoints": [
-    "static/css/main.357e4d6d.css",
+    "static/css/main.240a9e4a.css",
     "static/js/main.ea9ec666.js"
   ]
 }
