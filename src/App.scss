@@ -24,7 +24,6 @@
   @include reset(everything);
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow-y: scroll;
   background: var(--bgBody);
   background-size: 100% 200%;
   animation: gradient-animation 120s linear infinite;
