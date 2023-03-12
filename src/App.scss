@@ -20,6 +20,10 @@
   transition: all 500ms linear;
 }
 
+::-webkit-scrollbar {
+  display: none
+}
+
 .App {
   @include reset(everything);
   scroll-behavior: smooth;

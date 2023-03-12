@@ -37,15 +37,6 @@
     },
     {
       "id": 4,
-      "title": "Milan fashion week",
-      "description": "I created a map of the events of Milan Fashion Week with the integration of google map into the page to determine the coordinates.",
-      "logo": "images/projects/fw.jpeg",
-      "link": "https://www.nssmag.com/it/pills/30884/la-mappa-della-milan-fashion-week-men-s-ss23",
-      "shadow": "#3CCC52",
-      "credits": "credits: Nss magazine, Brownie"
-    },
-    {
-      "id": 5,
       "title": "Paris fashion week",
       "description": "I created a map of the events of Paris Fashion Week with the integration of google map into the page to determine the coordinates.",
       "logo": "images/projects/parisFw.jpeg",
@@ -54,36 +45,18 @@
       "credits": "credits: Nss magazine, Brownie"
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "Archive Stories",
       "description": "created with the use of: html, sass, jquery and company's cms. I learnt a lot of small animation and best practise.",
       "logo": "images/projects/archiveStories.jpeg",
       "link": "https://www.nssmag.com/it/archive-stories",
       "shadow": "#FFFFFF",
       "credits": "credits: Nss magazine, Brownie"
-    },
+    },   
     {
-      "id": 7,
-      "title": "When the time stand still",
-      "description": "created with the use of: html, sass, js, gsap and company's cms. I learnt how to use gsap in a project.",
-      "logo": "images/projects/gucci.jpeg",
-      "link": "https://www.nssmag.com/it/gucci",
-      "shadow": "#6BB786",
-      "credits": "credits: Nss magazine, Brownie"
-    },
-    {
-      "id": 8,
-      "title": "Sirene",
-      "description": "created with the use of: html, sass, js and company's cms. The last project created in nss by me, I learnt how to create overlays to make only the content scroll.",
-      "logo": "images/projects/sirene.jpeg",
-      "link": "https://www.nssgclub.com/it/sirene",
-      "shadow": "#D67994",
-      "credits": "credits: Nss g-club, Brownie"
-    },
-    {
-      "id": 9,
+      "id": 99,
       "title": "Coming Soon",
-      "description": "I'm working hard to learn new technologies, libraries and framework to be a better developer!",
+      "description": "New projects will come soon!",
       "logo": "images/projects/comingSoon.jpeg",
       "link": "",
       "shadow": "#000000",

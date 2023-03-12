@@ -35,7 +35,7 @@ const Certificates = () => {
       data-aos-offset="250"
     >
       <div className={style.certificateTitle}>
-        <h2 className={style.title}>Projects</h2>
+        <h2 className={style.title}>Certificates</h2>
       </div>
       <div className={style.swiperSection}>
         <Swiper
@@ -65,7 +65,7 @@ const Certificates = () => {
             certificateContent.map((el) => (
               <SwiperSlide
                 key={el.id}
-                className={`${style.projectsCard} ${style.swiperSlide}`}
+                className={`${style.certificateCard} ${style.swiperSlide}`}
                 style={{ boxShadow: `0 0 20px 10px ${el.shadow}` }}
                 
               >
